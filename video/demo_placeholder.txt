@@ -1,0 +1,1 @@
+Placeholder: Record a 10-minute demo (face first 30s, all 3 tasks, 1 failure case). Replace with demo.mp4 before final submission if not already present.

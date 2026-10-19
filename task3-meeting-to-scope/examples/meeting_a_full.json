@@ -1,0 +1,298 @@
+{
+  "project": "Meridian Sports \u2014 Search & Mobile (Meeting A)",
+  "prompt_version": "scope-pipeline-v1",
+  "status": "draft_pending_approval",
+  "requirements": [
+    {
+      "id": "REQ-001",
+      "description": "We want customers to find products and local coaches faster",
+      "source_quote": "Sarah: Our website search isn't great. We want customers to find products and local coaches faster.",
+      "speaker": "Sarah",
+      "status": "confirmed",
+      "priority": "should-have",
+      "topic": "general",
+      "feasibility": "needs_clarification",
+      "feasibility_note": "No matching documented capability found. Absence of evidence is not evidence of absence \u2014 expert to confirm.",
+      "evidence": [],
+      "acceptance_criteria": "Client can verify: we want customers to find products and local coaches faster (confirm exact test at approval)."
+    },
+    {
+      "id": "REQ-002",
+      "description": "We need filters \u2014 by category, by location, maybe by membership level",
+      "source_quote": "James: Right now people type a sport and get hundreds of results in random order. We need filters \u2014 by category, by location, maybe by membership level.",
+      "speaker": "James",
+      "status": "confirmed",
+      "priority": "must-have",
+      "topic": "search",
+      "feasibility": "existing_configuration",
+      "feasibility_note": "Search filters (category/location/level) and radius search are settings under Search Settings.",
+      "evidence": [],
+      "acceptance_criteria": "Client can verify: we need filters \u2014 by category, by location, maybe by membership level (confirm exact test at approval)."
+    },
+    {
+      "id": "REQ-003",
+      "description": "We also want visitors to search within, say, 10 miles of their postcode",
+      "source_quote": "Sarah: We also want visitors to search within, say, 10 miles of their postcode. That's how our customers actually think.",
+      "speaker": "Sarah",
+      "status": "confirmed",
+      "priority": "should-have",
+      "topic": "search",
+      "feasibility": "existing_configuration",
+      "feasibility_note": "Search filters (category/location/level) and radius search are settings under Search Settings.",
+      "evidence": [],
+      "acceptance_criteria": "Client can verify: we also want visitors to search within, say, 10 miles of their postcode (confirm exact test at approval)."
+    },
+    {
+      "id": "REQ-004",
+      "description": "Maybe add AI search as well?",
+      "source_quote": "Sarah: Maybe add AI search as well? Like, it understands what people mean, not just exact words. And it should handle typos \u2014 people spell coach names wrong all the time.",
+      "speaker": "Sarah",
+      "status": "unclear",
+      "priority": "should-have",
+      "topic": "search",
+      "feasibility": "potential_custom_development",
+      "feasibility_note": "Built-in search has no AI semantic ranking or typo tolerance beyond partial matches.",
+      "evidence": [],
+      "acceptance_criteria": "Client can verify: maybe add ai search as well? (confirm exact test at approval)."
+    },
+    {
+      "id": "REQ-005",
+      "description": "And it should handle typos \u2014 people spell coach names wrong all the time",
+      "source_quote": "Sarah: Maybe add AI search as well? Like, it understands what people mean, not just exact words. And it should handle typos \u2014 people spell coach names wrong all the time.",
+      "speaker": "Sarah",
+      "status": "confirmed",
+      "priority": "should-have",
+      "topic": "search",
+      "feasibility": "potential_custom_development",
+      "feasibility_note": "Built-in search has no AI semantic ranking or typo tolerance beyond partial matches.",
+      "evidence": [],
+      "acceptance_criteria": "Client can verify: and it should handle typos \u2014 people spell coach names wrong all the time (confirm exact test at approval)."
+    },
+    {
+      "id": "REQ-006",
+      "description": "We want a better mobile experience \u2014 search should be obvious on phones",
+      "source_quote": "James: On mobile it's worse. The search box is buried. We want a better mobile experience \u2014 search should be obvious on phones.",
+      "speaker": "James",
+      "status": "confirmed",
+      "priority": "should-have",
+      "topic": "search",
+      "feasibility": "existing_with_limitation",
+      "feasibility_note": "Themes responsive; mobile search-bar position is a Design Setting. Custom mobile layouts need dev.",
+      "evidence": [],
+      "acceptance_criteria": "Client can verify: we want a better mobile experience \u2014 search should be obvious on phones (confirm exact test at approval)."
+    },
+    {
+      "id": "REQ-007",
+      "description": "Search and mobile are the must-haves for phase one",
+      "source_quote": "Sarah: Also our listing pages look dated. But search first. Search and mobile are the must-haves for phase one.",
+      "speaker": "Sarah",
+      "status": "confirmed",
+      "priority": "must-have",
+      "topic": "search",
+      "feasibility": "existing_with_limitation",
+      "feasibility_note": "Themes responsive; mobile search-bar position is a Design Setting. Custom mobile layouts need dev.",
+      "evidence": [],
+      "acceptance_criteria": "Client can verify: search and mobile are the must-haves for phase one (confirm exact test at approval)."
+    },
+    {
+      "id": "REQ-008",
+      "description": "We were hoping to launch before Christmas",
+      "source_quote": "James: We were hoping to launch before Christmas. Budget \u2014 we'd like to keep phase one under about 80 hours of work if possible, but tell us what's realistic.",
+      "speaker": "James",
+      "status": "confirmed",
+      "priority": "should-have",
+      "topic": "general",
+      "feasibility": "needs_clarification",
+      "feasibility_note": "Timeline statement \u2014 not a product feature; confirm as project constraint.",
+      "evidence": [],
+      "acceptance_criteria": "Client can verify: we were hoping to launch before christmas (confirm exact test at approval)."
+    },
+    {
+      "id": "REQ-009",
+      "description": "One more thing \u2014 premium members pay us more, so ideally they appear higher in results",
+      "source_quote": "Sarah: One more thing \u2014 premium members pay us more, so ideally they appear higher in results. Not sure if that's a setting.",
+      "speaker": "Sarah",
+      "status": "confirmed",
+      "priority": "should-have",
+      "topic": "ranking",
+      "feasibility": "needs_clarification",
+      "feasibility_note": "Docs describe keyword search + filters; paid-tier ranking boost is not documented.",
+      "evidence": [],
+      "acceptance_criteria": "Client can verify: one more thing \u2014 premium members pay us more, so ideally they appear higher in results (confirm exact test at approval)."
+    }
+  ],
+  "exclusions": [
+    "Agreed. We do not want to pay for custom code if a setting does the job.",
+    "No redesign of the whole site. And no mobile app right now \u2014 website only.",
+    "And member payments are fine as they are. Don't touch billing."
+  ],
+  "estimates": [
+    {
+      "requirement_id": "REQ-001",
+      "task": "REQ-001 \u00b7 Discovery / feasibility spike",
+      "low_h": 2.0,
+      "likely_h": 4.0,
+      "high_h": 8.0,
+      "assumption": "Heuristic v1 for 'needs_clarification'. Needs senior review."
+    },
+    {
+      "requirement_id": "REQ-002",
+      "task": "REQ-002 \u00b7 Requirements & design",
+      "low_h": 1.0,
+      "likely_h": 2.0,
+      "high_h": 3.0,
+      "assumption": "Heuristic v1 for 'existing_configuration'. Needs senior review."
+    },
+    {
+      "requirement_id": "REQ-002",
+      "task": "REQ-002 \u00b7 Configuration",
+      "low_h": 1.0,
+      "likely_h": 2.0,
+      "high_h": 4.0,
+      "assumption": "Heuristic v1 for 'existing_configuration'. Needs senior review."
+    },
+    {
+      "requirement_id": "REQ-002",
+      "task": "REQ-002 \u00b7 Testing & handover",
+      "low_h": 1.0,
+      "likely_h": 2.0,
+      "high_h": 3.0,
+      "assumption": "Heuristic v1 for 'existing_configuration'. Needs senior review."
+    },
+    {
+      "requirement_id": "REQ-003",
+      "task": "REQ-003 \u00b7 Requirements & design",
+      "low_h": 1.0,
+      "likely_h": 2.0,
+      "high_h": 3.0,
+      "assumption": "Heuristic v1 for 'existing_configuration'. Needs senior review."
+    },
+    {
+      "requirement_id": "REQ-003",
+      "task": "REQ-003 \u00b7 Configuration",
+      "low_h": 1.0,
+      "likely_h": 2.0,
+      "high_h": 4.0,
+      "assumption": "Heuristic v1 for 'existing_configuration'. Needs senior review."
+    },
+    {
+      "requirement_id": "REQ-003",
+      "task": "REQ-003 \u00b7 Testing & handover",
+      "low_h": 1.0,
+      "likely_h": 2.0,
+      "high_h": 3.0,
+      "assumption": "Heuristic v1 for 'existing_configuration'. Needs senior review."
+    },
+    {
+      "requirement_id": "REQ-004",
+      "task": "REQ-004 \u00b7 Discovery / feasibility spike",
+      "low_h": 2.0,
+      "likely_h": 4.0,
+      "high_h": 8.0,
+      "assumption": "Heuristic v1 for 'needs_clarification'; UNCONFIRMED requirement \u2014 discovery only. Needs senior review."
+    },
+    {
+      "requirement_id": "REQ-005",
+      "task": "REQ-005 \u00b7 Requirements & technical design",
+      "low_h": 2.0,
+      "likely_h": 4.0,
+      "high_h": 7.0,
+      "assumption": "Heuristic v1 for 'potential_custom_development'. Needs senior review."
+    },
+    {
+      "requirement_id": "REQ-005",
+      "task": "REQ-005 \u00b7 Backend implementation",
+      "low_h": 6.0,
+      "likely_h": 12.0,
+      "high_h": 22.0,
+      "assumption": "Heuristic v1 for 'potential_custom_development'. Needs senior review."
+    },
+    {
+      "requirement_id": "REQ-005",
+      "task": "REQ-005 \u00b7 Frontend implementation",
+      "low_h": 4.0,
+      "likely_h": 8.0,
+      "high_h": 14.0,
+      "assumption": "Heuristic v1 for 'potential_custom_development'. Needs senior review."
+    },
+    {
+      "requirement_id": "REQ-005",
+      "task": "REQ-005 \u00b7 Testing, integration & deployment",
+      "low_h": 3.0,
+      "likely_h": 6.0,
+      "high_h": 10.0,
+      "assumption": "Heuristic v1 for 'potential_custom_development'. Needs senior review."
+    },
+    {
+      "requirement_id": "REQ-006",
+      "task": "REQ-006 \u00b7 Requirements & design",
+      "low_h": 1.0,
+      "likely_h": 2.0,
+      "high_h": 4.0,
+      "assumption": "Heuristic v1 for 'existing_with_limitation'. Needs senior review."
+    },
+    {
+      "requirement_id": "REQ-006",
+      "task": "REQ-006 \u00b7 Configuration + workarounds",
+      "low_h": 2.0,
+      "likely_h": 4.0,
+      "high_h": 7.0,
+      "assumption": "Heuristic v1 for 'existing_with_limitation'. Needs senior review."
+    },
+    {
+      "requirement_id": "REQ-006",
+      "task": "REQ-006 \u00b7 Testing & handover",
+      "low_h": 1.0,
+      "likely_h": 3.0,
+      "high_h": 5.0,
+      "assumption": "Heuristic v1 for 'existing_with_limitation'. Needs senior review."
+    },
+    {
+      "requirement_id": "REQ-007",
+      "task": "REQ-007 \u00b7 Requirements & design",
+      "low_h": 1.0,
+      "likely_h": 2.0,
+      "high_h": 4.0,
+      "assumption": "Heuristic v1 for 'existing_with_limitation'. Needs senior review."
+    },
+    {
+      "requirement_id": "REQ-007",
+      "task": "REQ-007 \u00b7 Configuration + workarounds",
+      "low_h": 2.0,
+      "likely_h": 4.0,
+      "high_h": 7.0,
+      "assumption": "Heuristic v1 for 'existing_with_limitation'. Needs senior review."
+    },
+    {
+      "requirement_id": "REQ-007",
+      "task": "REQ-007 \u00b7 Testing & handover",
+      "low_h": 1.0,
+      "likely_h": 3.0,
+      "high_h": 5.0,
+      "assumption": "Heuristic v1 for 'existing_with_limitation'. Needs senior review."
+    },
+    {
+      "requirement_id": "REQ-008",
+      "task": "REQ-008 \u00b7 Discovery / feasibility spike",
+      "low_h": 2.0,
+      "likely_h": 4.0,
+      "high_h": 8.0,
+      "assumption": "Heuristic v1 for 'needs_clarification'. Needs senior review."
+    },
+    {
+      "requirement_id": "REQ-009",
+      "task": "REQ-009 \u00b7 Discovery / feasibility spike",
+      "low_h": 2.0,
+      "likely_h": 4.0,
+      "high_h": 8.0,
+      "assumption": "Heuristic v1 for 'needs_clarification'. Needs senior review."
+    }
+  ],
+  "totals": {
+    "low_h": 37.0,
+    "likely_h": 76.0,
+    "high_h": 137.0
+  },
+  "scope_md": "# Scope of Work \u2014 Meridian Sports \u2014 Search & Mobile (Meeting A)\n\n_Status: DRAFT \u2014 requires human approval before sending. Pipeline: scope-pipeline-v1_\n\n## Requirements (with feasibility checked against product knowledge)\n\n### REQ-001 \u2014 We want customers to find products and local coaches faster\n- Status: **confirmed** \u00b7 Priority: should-have \u00b7 Feasibility: **needs_clarification**\n- Feasibility note: No matching documented capability found. Absence of evidence is not evidence of absence \u2014 expert to confirm.\n- Evidence: no KB citation (offline check)\n- Acceptance: Client can verify: we want customers to find products and local coaches faster (confirm exact test at approval).\n- Client said (Sarah): \u201cSarah: Our website search isn't great. We want customers to find products and local coaches faster.\u201d\n\n### REQ-002 \u2014 We need filters \u2014 by category, by location, maybe by membership level\n- Status: **confirmed** \u00b7 Priority: must-have \u00b7 Feasibility: **existing_configuration**\n- Feasibility note: Search filters (category/location/level) and radius search are settings under Search Settings.\n- Evidence: no KB citation (offline check)\n- Acceptance: Client can verify: we need filters \u2014 by category, by location, maybe by membership level (confirm exact test at approval).\n- Client said (James): \u201cJames: Right now people type a sport and get hundreds of results in random order. We need filters \u2014 by category, by location, maybe by membership level.\u201d\n\n### REQ-003 \u2014 We also want visitors to search within, say, 10 miles of their postcode\n- Status: **confirmed** \u00b7 Priority: should-have \u00b7 Feasibility: **existing_configuration**\n- Feasibility note: Search filters (category/location/level) and radius search are settings under Search Settings.\n- Evidence: no KB citation (offline check)\n- Acceptance: Client can verify: we also want visitors to search within, say, 10 miles of their postcode (confirm exact test at approval).\n- Client said (Sarah): \u201cSarah: We also want visitors to search within, say, 10 miles of their postcode. That's how our customers actually think.\u201d\n\n### REQ-004 \u2014 Maybe add AI search as well?\n- Status: **unclear** \u00b7 Priority: should-have \u00b7 Feasibility: **potential_custom_development**\n- Feasibility note: Built-in search has no AI semantic ranking or typo tolerance beyond partial matches.\n- Evidence: no KB citation (offline check)\n- Acceptance: Client can verify: maybe add ai search as well? (confirm exact test at approval).\n- Client said (Sarah): \u201cSarah: Maybe add AI search as well? Like, it understands what people mean, not just exact words. And it should handle typos \u2014 people spell coach names wrong all the time.\u201d\n\n### REQ-005 \u2014 And it should handle typos \u2014 people spell coach names wrong all the time\n- Status: **confirmed** \u00b7 Priority: should-have \u00b7 Feasibility: **potential_custom_development**\n- Feasibility note: Built-in search has no AI semantic ranking or typo tolerance beyond partial matches.\n- Evidence: no KB citation (offline check)\n- Acceptance: Client can verify: and it should handle typos \u2014 people spell coach names wrong all the time (confirm exact test at approval).\n- Client said (Sarah): \u201cSarah: Maybe add AI search as well? Like, it understands what people mean, not just exact words. And it should handle typos \u2014 people spell coach names wrong all the time.\u201d\n\n### REQ-006 \u2014 We want a better mobile experience \u2014 search should be obvious on phones\n- Status: **confirmed** \u00b7 Priority: should-have \u00b7 Feasibility: **existing_with_limitation**\n- Feasibility note: Themes responsive; mobile search-bar position is a Design Setting. Custom mobile layouts need dev.\n- Evidence: no KB citation (offline check)\n- Acceptance: Client can verify: we want a better mobile experience \u2014 search should be obvious on phones (confirm exact test at approval).\n- Client said (James): \u201cJames: On mobile it's worse. The search box is buried. We want a better mobile experience \u2014 search should be obvious on phones.\u201d\n\n### REQ-007 \u2014 Search and mobile are the must-haves for phase one\n- Status: **confirmed** \u00b7 Priority: must-have \u00b7 Feasibility: **existing_with_limitation**\n- Feasibility note: Themes responsive; mobile search-bar position is a Design Setting. Custom mobile layouts need dev.\n- Evidence: no KB citation (offline check)\n- Acceptance: Client can verify: search and mobile are the must-haves for phase one (confirm exact test at approval).\n- Client said (Sarah): \u201cSarah: Also our listing pages look dated. But search first. Search and mobile are the must-haves for phase one.\u201d\n\n### REQ-008 \u2014 We were hoping to launch before Christmas\n- Status: **confirmed** \u00b7 Priority: should-have \u00b7 Feasibility: **needs_clarification**\n- Feasibility note: Timeline statement \u2014 not a product feature; confirm as project constraint.\n- Evidence: no KB citation (offline check)\n- Acceptance: Client can verify: we were hoping to launch before christmas (confirm exact test at approval).\n- Client said (James): \u201cJames: We were hoping to launch before Christmas. Budget \u2014 we'd like to keep phase one under about 80 hours of work if possible, but tell us what's realistic.\u201d\n\n### REQ-009 \u2014 One more thing \u2014 premium members pay us more, so ideally they appear higher in results\n- Status: **confirmed** \u00b7 Priority: should-have \u00b7 Feasibility: **needs_clarification**\n- Feasibility note: Docs describe keyword search + filters; paid-tier ranking boost is not documented.\n- Evidence: no KB citation (offline check)\n- Acceptance: Client can verify: one more thing \u2014 premium members pay us more, so ideally they appear higher in results (confirm exact test at approval).\n- Client said (Sarah): \u201cSarah: One more thing \u2014 premium members pay us more, so ideally they appear higher in results. Not sure if that's a setting.\u201d\n\n## Explicit exclusions (from client's own words)\n\n- Agreed. We do not want to pay for custom code if a setting does the job.\n- No redesign of the whole site. And no mobile app right now \u2014 website only.\n- And member payments are fine as they are. Don't touch billing.\n\n## Open questions (do not estimate as firm work until answered)\n\n- REQ-001: We want customers to find products and local coaches faster \u2014 No matching documented capability found. Absence of evidence is not evidence of absence \u2014 expert to confirm.\n- REQ-004: Maybe add AI search as well? \u2014 Built-in search has no AI semantic ranking or typo tolerance beyond partial matches.\n- REQ-008: We were hoping to launch before Christmas \u2014 Timeline statement \u2014 not a product feature; confirm as project constraint.\n- REQ-009: One more thing \u2014 premium members pay us more, so ideally they appear higher in results \u2014 Docs describe keyword search + filters; paid-tier ranking boost is not documented.\n\n## Effort summary\n\n- Low: **37 h** \u00b7 Likely: **76 h** \u00b7 High: **137 h**\n- Ranges, not a fixed quote. `needs_clarification` items carry only a discovery spike.\n\n## Client responsibilities\n- Approve/revise this scope; confirm acceptance tests; provide test data and timely feedback.\n",
+  "proposal_md": "# Proposal \u2014 Meridian Sports \u2014 Search & Mobile (Meeting A)\n\n_Status: DRAFT \u2014 not sent. Human approval required._\n\n## Executive summary\nWe reviewed your requirements against the product's documented capabilities first. 4 item(s) can be delivered mainly through existing settings (faster, cheaper); 2 item(s) need custom development and are priced separately below.\n\n## Deliverables\n\n- **REQ-001** We want customers to find products and local coaches faster (needs clarification)\n- **REQ-002** We need filters \u2014 by category, by location, maybe by membership level (existing configuration)\n- **REQ-003** We also want visitors to search within, say, 10 miles of their postcode (existing configuration)\n- **REQ-004** Maybe add AI search as well? (potential custom development)\n- **REQ-005** And it should handle typos \u2014 people spell coach names wrong all the time (potential custom development)\n- **REQ-006** We want a better mobile experience \u2014 search should be obvious on phones (existing with limitation)\n- **REQ-007** Search and mobile are the must-haves for phase one (existing with limitation)\n- **REQ-008** We were hoping to launch before Christmas (needs clarification)\n- **REQ-009** One more thing \u2014 premium members pay us more, so ideally they appear higher in results (needs clarification)\n\n## Effort & pricing assumptions\n\n- Estimated effort: 37\u2013137 hours (likely 76 h).\n- Hourly rate not set: hours only. A human confirms the commercial price before this is sent.\n- Items marked 'needs clarification' are quoted only as a short discovery spike until confirmed.\n\n## What is NOT included\n- Anything in the scope's exclusions, and any requirement added after approval (quoted as a change).\n\n## Next step\n- Reply approving this scope (or request changes). No work begins before approval.\n"
+}

@@ -1,0 +1,23 @@
+task,case_id,type,model_mode,latency_ms,cost_usd,passed,detail
+scope,SC-01,extraction,heuristic-v1-offline,0.0,0.0,True,"we want customers to find products and local coaches faster we need filters — by category, by location, maybe by membe"
+scope,SC-02,source_linkage,heuristic-v1-offline,0.0,0.0,True,
+scope,SC-03,feasibility_config,heuristic-v1-offline,0.0,0.0,True,existing_configuration
+scope,SC-04,feasibility_custom,heuristic-v1-offline,0.0,0.0,True,potential_custom_development
+scope,SC-05,feasibility_custom,heuristic-v1-offline,0.0,0.0,True,potential_custom_development
+scope,SC-06,feasibility_config,heuristic-v1-offline,0.0,0.0,True,existing_configuration
+scope,SC-07,feasibility_unknown_is_not_custom,heuristic-v1-offline,0.0,0.0,True,needs_clarification
+scope,SC-08,exclusion_capture,heuristic-v1-offline,0.0,0.0,True,"['Agreed. We do not want to pay for custom code if a setting does the job.', 'No redesign of the whole site. And no mobi"
+scope,SC-09,consultant_words_not_scope,heuristic-v1-offline,0.1,0.0,True,
+scope,SC-10,estimates_present,heuristic-v1-offline,2.1,0.0,True,
+scope,SC-11,estimates_are_ranges,heuristic-v1-offline,1.2,0.0,True,
+scope,SC-12,diff_added,heuristic-v1-offline,8.6,0.0,True,"['First, we want one more filter — by price range', 'And a new idea: could members take bookings directly on thei']"
+scope,SC-13,diff_removed,heuristic-v1-offline,9.5,0.0,True,"[{'baseline_id': 'REQ-004', 'description': 'Maybe add AI search as well?', 'matched_removed_terms': ['ai', 'search'], 'a"
+scope,SC-14,diff_out_of_scope_flag,heuristic-v1-offline,8.9,0.0,True,
+scope,SC-15,proposal_draft_label,heuristic-v1-offline,0.0,0.0,True,
+scope,SC-16,scope_has_acceptance,heuristic-v1-offline,0.0,0.0,True,
+scope,SC-17,unclear_flagged,heuristic-v1-offline,0.1,0.0,True,
+scope,SC-18,long_transcript_chunking,heuristic-v1-offline,23.3,0.0,True,
+scope,SC-19,approval_gate,heuristic-v1-offline,0.0,0.0,True,
+scope,SC-20,meeting_b_spam_feasibility,heuristic-v1-offline,0.0,0.0,True,existing_with_limitation
+scope,SC-21,feasibility_gateway,heuristic-v1-offline,0.0,0.0,True,potential_custom_development
+scope,SC-22,dedup,heuristic-v1-offline,0.1,0.0,True,

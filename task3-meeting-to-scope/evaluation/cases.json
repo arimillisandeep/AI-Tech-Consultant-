@@ -1,0 +1,138 @@
+[
+ {
+  "id": "SC-01",
+  "type": "extraction",
+  "transcript_file": "meeting_a_website_search.txt",
+  "must_contain_any": [
+   "filter",
+   "postcode",
+   "mobile"
+  ],
+  "note": "Core A requirements extracted"
+ },
+ {
+  "id": "SC-02",
+  "type": "source_linkage",
+  "transcript_file": "meeting_a_website_search.txt",
+  "check": "every_requirement_has_source_quote",
+  "note": "No orphan requirements"
+ },
+ {
+  "id": "SC-03",
+  "type": "feasibility_config",
+  "text": "We need filters by category and location in search",
+  "expect_feasibility": "existing_configuration"
+ },
+ {
+  "id": "SC-04",
+  "type": "feasibility_custom",
+  "text": "We want AI search that understands what people mean",
+  "expect_feasibility": "potential_custom_development"
+ },
+ {
+  "id": "SC-05",
+  "type": "feasibility_custom",
+  "text": "We need a booking calendar on listing pages",
+  "expect_feasibility": "potential_custom_development"
+ },
+ {
+  "id": "SC-06",
+  "type": "feasibility_config",
+  "text": "We want to connect Stripe for payments",
+  "expect_feasibility": "existing_configuration"
+ },
+ {
+  "id": "SC-07",
+  "type": "feasibility_unknown_is_not_custom",
+  "text": "We need teleportation delivery for orders",
+  "expect_feasibility": "needs_clarification",
+  "note": "KB miss must NOT become a custom quote"
+ },
+ {
+  "id": "SC-08",
+  "type": "exclusion_capture",
+  "transcript_file": "meeting_a_website_search.txt",
+  "check": "exclusions_nonempty",
+  "note": "'No redesign', 'don't touch billing' captured"
+ },
+ {
+  "id": "SC-09",
+  "type": "consultant_words_not_scope",
+  "text": "Consultant: We need a gold-plated robot butler\nSarah: We want search filters by category",
+  "must_not_contain": "robot"
+ },
+ {
+  "id": "SC-10",
+  "type": "estimates_present",
+  "transcript_file": "meeting_b_ecommerce.txt",
+  "check": "likely_hours_positive"
+ },
+ {
+  "id": "SC-11",
+  "type": "estimates_are_ranges",
+  "transcript_file": "meeting_b_ecommerce.txt",
+  "check": "low_le_likely_le_high"
+ },
+ {
+  "id": "SC-12",
+  "type": "diff_added",
+  "note": "C adds price-range filter + booking vs A"
+ },
+ {
+  "id": "SC-13",
+  "type": "diff_removed",
+  "note": "C drops AI search from A"
+ },
+ {
+  "id": "SC-14",
+  "type": "diff_out_of_scope_flag",
+  "note": "Booking flagged potentially_out_of_scope"
+ },
+ {
+  "id": "SC-15",
+  "type": "proposal_draft_label",
+  "transcript_file": "meeting_a_website_search.txt",
+  "check": "proposal_says_draft"
+ },
+ {
+  "id": "SC-16",
+  "type": "scope_has_acceptance",
+  "transcript_file": "meeting_a_website_search.txt",
+  "check": "acceptance_criteria_present"
+ },
+ {
+  "id": "SC-17",
+  "type": "unclear_flagged",
+  "text": "Sarah: Maybe add AI search as well? We are not sure",
+  "check": "has_unclear_requirement"
+ },
+ {
+  "id": "SC-18",
+  "type": "long_transcript_chunking",
+  "check": "chunker_splits_long_text"
+ },
+ {
+  "id": "SC-19",
+  "type": "approval_gate",
+  "check": "pipeline_status_is_draft",
+  "note": "Pipeline output must never self-approve"
+ },
+ {
+  "id": "SC-20",
+  "type": "meeting_b_spam_feasibility",
+  "text": "We need order confirmation emails that do not land in spam",
+  "expect_feasibility": "existing_with_limitation"
+ },
+ {
+  "id": "SC-21",
+  "type": "feasibility_gateway",
+  "text": "We need a local payment gateway integration",
+  "expect_feasibility": "potential_custom_development"
+ },
+ {
+  "id": "SC-22",
+  "type": "dedup",
+  "text": "Sarah: We need search filters by category\nSarah: We need search filters by category",
+  "check": "no_duplicate_requirements"
+ }
+]

@@ -1,0 +1,9 @@
+.env
+__pycache__/
+.pytest_cache/
+node_modules/
+dist/
+*.db
+task1-knowledge-brain/data/knowledge.db
+task2-inbox-agent/data/feedback.json
+task3-meeting-to-scope/data/projects.json

@@ -1,0 +1,402 @@
+[
+  {
+    "id": "EM-01",
+    "from": "customer1@example.com",
+    "subject": "How do I change my logo?",
+    "body": "Hi, how do I change the logo on my website? I have a new PNG ready. Thanks, Priya Sharma",
+    "expectedCategory": "how_to",
+    "risk": "low"
+  },
+  {
+    "id": "EM-02",
+    "from": "customer2@example.com",
+    "subject": "Favicon size",
+    "body": "How to update the favicon and what size should it be? Ours looks blurry.",
+    "expectedCategory": "how_to",
+    "risk": "low"
+  },
+  {
+    "id": "EM-03",
+    "from": "customer3@example.com",
+    "subject": "Refund process question",
+    "body": "How do I refund a member payment from last week? Where do I click?",
+    "expectedCategory": "how_to",
+    "risk": "low"
+  },
+  {
+    "id": "EM-04",
+    "from": "customer4@example.com",
+    "subject": "Adding search filters",
+    "body": "How can I add category and location filters to member search? Is custom code needed?",
+    "expectedCategory": "how_to",
+    "risk": "low"
+  },
+  {
+    "id": "EM-05",
+    "from": "customer5@example.com",
+    "subject": "Create membership plan",
+    "body": "How do I create a membership plan with a free trial for new members?",
+    "expectedCategory": "how_to",
+    "risk": "low"
+  },
+  {
+    "id": "EM-06",
+    "from": "customer6@example.com",
+    "subject": "Edit order confirmation email",
+    "body": "Where do I edit the order confirmation email template? I'd like to change the wording.",
+    "expectedCategory": "how_to",
+    "risk": "low"
+  },
+  {
+    "id": "EM-07",
+    "from": "customer7@example.com",
+    "subject": "Import members CSV",
+    "body": "How to import about 2,000 members from a CSV? What columns do I need?",
+    "expectedCategory": "how_to",
+    "risk": "low"
+  },
+  {
+    "id": "EM-08",
+    "from": "customer8@example.com",
+    "subject": "Change contact email",
+    "body": "How do I change the contact email shown in the footer of our site?",
+    "expectedCategory": "how_to",
+    "risk": "low"
+  },
+  {
+    "id": "EM-09",
+    "from": "customer9@example.com",
+    "subject": "Send password reset link",
+    "body": "A member forgot her password. How can I send her a password reset link?",
+    "expectedCategory": "how_to",
+    "risk": "low"
+  },
+  {
+    "id": "EM-10",
+    "from": "customer10@example.com",
+    "subject": "Connect Stripe",
+    "body": "How do I connect Stripe so we can start taking payments?",
+    "expectedCategory": "how_to",
+    "risk": "low"
+  },
+  {
+    "id": "EM-11",
+    "from": "customer11@example.com",
+    "subject": "Export member list",
+    "body": "How can I export my member list including plan and signup date?",
+    "expectedCategory": "how_to",
+    "risk": "low"
+  },
+  {
+    "id": "EM-12",
+    "from": "customer12@example.com",
+    "subject": "Mobile menu",
+    "body": "How does the mobile menu work, and can I change where the search bar sits on phones?",
+    "expectedCategory": "how_to",
+    "risk": "low"
+  },
+  {
+    "id": "EM-13",
+    "from": "customer13@example.com",
+    "subject": "Payments failing since yesterday",
+    "body": "Our member payments keep failing since yesterday. Nothing changed on our side. Please help urgently.",
+    "expectedCategory": "troubleshooting",
+    "risk": "moderate"
+  },
+  {
+    "id": "EM-14",
+    "from": "customer14@example.com",
+    "subject": "Emails going to spam",
+    "body": "Order confirmation emails are landing in spam for most customers. What do we check?",
+    "expectedCategory": "troubleshooting",
+    "risk": "moderate"
+  },
+  {
+    "id": "EM-15",
+    "from": "customer15@example.com",
+    "subject": "Member locked out",
+    "body": "A member says she can't log in and her account seems locked after a few tries.",
+    "expectedCategory": "troubleshooting",
+    "risk": "moderate"
+  },
+  {
+    "id": "EM-16",
+    "from": "customer16@example.com",
+    "subject": "Logo not updating",
+    "body": "I uploaded a new logo yesterday but the old one still shows on the homepage. The upload itself didn't give an error.",
+    "expectedCategory": "troubleshooting",
+    "risk": "moderate"
+  },
+  {
+    "id": "EM-17",
+    "from": "customer17@example.com",
+    "subject": "Import skipping rows",
+    "body": "Our CSV import stopped importing some rows and skipped about 300 members. Why?",
+    "expectedCategory": "troubleshooting",
+    "risk": "moderate"
+  },
+  {
+    "id": "EM-18",
+    "from": "customer18@example.com",
+    "subject": "Test mode charges",
+    "body": "A test charge worked but real cards fail. The gateway shows an error about currency.",
+    "expectedCategory": "troubleshooting",
+    "risk": "moderate"
+  },
+  {
+    "id": "EM-19",
+    "from": "customer19@example.com",
+    "subject": "Reset link expired",
+    "body": "Members say the password reset link expires before they can use it. Is 60 minutes normal?",
+    "expectedCategory": "troubleshooting",
+    "risk": "moderate"
+  },
+  {
+    "id": "EM-20",
+    "from": "customer20@example.com",
+    "subject": "Search shows no results",
+    "body": "Member search returns no results even for members who definitely exist. It stopped working this week.",
+    "expectedCategory": "troubleshooting",
+    "risk": "moderate"
+  },
+  {
+    "id": "EM-21",
+    "from": "customer21@example.com",
+    "subject": "Notification emails not sending",
+    "body": "Welcome emails are not working for new signups since Monday. Templates look switched on.",
+    "expectedCategory": "troubleshooting",
+    "risk": "moderate"
+  },
+  {
+    "id": "EM-22",
+    "from": "customer22@example.com",
+    "subject": "Refund button missing",
+    "body": "I can't find the Refund option for a transaction from 7 months ago. Is there a time limit?",
+    "expectedCategory": "troubleshooting",
+    "risk": "moderate"
+  },
+  {
+    "id": "EM-23",
+    "from": "customer23@example.com",
+    "subject": "New booking feature",
+    "body": "Can you build a booking calendar so members can take appointments directly on their profile?",
+    "expectedCategory": "project_request",
+    "risk": "moderate"
+  },
+  {
+    "id": "EM-24",
+    "from": "customer24@example.com",
+    "subject": "Custom search ranking",
+    "body": "We need a custom search that ranks premium members higher and understands typos. Can you develop this?",
+    "expectedCategory": "project_request",
+    "risk": "moderate"
+  },
+  {
+    "id": "EM-25",
+    "from": "customer25@example.com",
+    "subject": "Mobile app enquiry",
+    "body": "We want a mobile app version of our directory for members. Where do we start?",
+    "expectedCategory": "project_request",
+    "risk": "moderate"
+  },
+  {
+    "id": "EM-26",
+    "from": "customer26@example.com",
+    "subject": "Add reviews feature",
+    "body": "Can you add a feature for verified reviews with photos on member pages?",
+    "expectedCategory": "project_request",
+    "risk": "moderate"
+  },
+  {
+    "id": "EM-27",
+    "from": "customer27@example.com",
+    "subject": "Multi-language site",
+    "body": "We need a version of the site in Spanish and French. Is that a setting or custom development?",
+    "expectedCategory": "project_request",
+    "risk": "moderate"
+  },
+  {
+    "id": "EM-28",
+    "from": "customer28@example.com",
+    "subject": "CRM integration",
+    "body": "We need a integration that pushes new member signups into our CRM automatically.",
+    "expectedCategory": "project_request",
+    "risk": "moderate"
+  },
+  {
+    "id": "EM-29",
+    "from": "customer29@example.com",
+    "subject": "Please cancel and refund",
+    "body": "Please cancel my plan and refund this month's payment. We are closing the business.",
+    "expectedCategory": "refund_cancellation",
+    "risk": "high"
+  },
+  {
+    "id": "EM-30",
+    "from": "customer30@example.com",
+    "subject": "Charged twice",
+    "body": "I was charged twice this month. Please refund the duplicate charge immediately.",
+    "expectedCategory": "refund_cancellation",
+    "risk": "high"
+  },
+  {
+    "id": "EM-31",
+    "from": "customer31@example.com",
+    "subject": "Cancel subscription",
+    "body": "I want to cancel my subscription. Do I keep access until the end of the period I paid for?",
+    "expectedCategory": "refund_cancellation",
+    "risk": "high"
+  },
+  {
+    "id": "EM-32",
+    "from": "customer32@example.com",
+    "subject": "Refund for unused plan",
+    "body": "I never used the plan I bought 3 weeks ago. Can I get my money back?",
+    "expectedCategory": "refund_cancellation",
+    "risk": "high"
+  },
+  {
+    "id": "EM-33",
+    "from": "customer33@example.com",
+    "subject": "Close my account",
+    "body": "Close my account completely and stop all future charges please.",
+    "expectedCategory": "refund_cancellation",
+    "risk": "high"
+  },
+  {
+    "id": "EM-34",
+    "from": "customer34@example.com",
+    "subject": "Chargeback warning",
+    "body": "If the refund is not processed this week I will raise a chargeback with my bank.",
+    "expectedCategory": "refund_cancellation",
+    "risk": "high"
+  },
+  {
+    "id": "EM-35",
+    "from": "customer35@example.com",
+    "subject": "Your update broke our site",
+    "body": "Your latest update broke our homepage layout. This is unacceptable during our peak season.",
+    "expectedCategory": "complaint",
+    "risk": "high"
+  },
+  {
+    "id": "EM-36",
+    "from": "customer36@example.com",
+    "subject": "Very disappointed with support",
+    "body": "I am very disappointed \u2014 three days and no proper answer about our broken payments page.",
+    "expectedCategory": "complaint",
+    "risk": "high"
+  },
+  {
+    "id": "EM-37",
+    "from": "customer37@example.com",
+    "subject": "Frustrated and considering leaving",
+    "body": "Honestly frustrated. Search has been broken since the update and our members are complaining to us.",
+    "expectedCategory": "complaint",
+    "risk": "high"
+  },
+  {
+    "id": "EM-38",
+    "from": "customer38@example.com",
+    "subject": "Formal complaint",
+    "body": "This is a formal complaint about downtime last Friday. We lost bookings and want an explanation.",
+    "expectedCategory": "complaint",
+    "risk": "high"
+  },
+  {
+    "id": "EM-39",
+    "from": "customer39@example.com",
+    "subject": "Terrible experience",
+    "body": "Terrible experience so far. Half the features I was sold don't seem to work as described.",
+    "expectedCategory": "complaint",
+    "risk": "high"
+  },
+  {
+    "id": "EM-40",
+    "from": "customer40@example.com",
+    "subject": "Legal escalation",
+    "body": "If this billing issue is not resolved, our lawyer will be in touch. The service has been unacceptable.",
+    "expectedCategory": "complaint",
+    "risk": "high"
+  },
+  {
+    "id": "EM-41",
+    "from": "customer41@example.com",
+    "subject": "Quote for custom filters",
+    "body": "How much would it cost to add advanced filters (price range, rating) to our search?",
+    "expectedCategory": "quote_request",
+    "risk": "moderate"
+  },
+  {
+    "id": "EM-42",
+    "from": "customer42@example.com",
+    "subject": "Price for migration",
+    "body": "Can you give me a quote for migrating 4,000 members from our old platform?",
+    "expectedCategory": "quote_request",
+    "risk": "moderate"
+  },
+  {
+    "id": "EM-43",
+    "from": "customer43@example.com",
+    "subject": "Cost to redesign homepage",
+    "body": "What would be the cost to redesign our homepage and member profile pages?",
+    "expectedCategory": "quote_request",
+    "risk": "moderate"
+  },
+  {
+    "id": "EM-44",
+    "from": "customer44@example.com",
+    "subject": "Pricing for payment gateway",
+    "body": "We need pricing for integrating a local payment gateway that isn't Stripe or PayPal.",
+    "expectedCategory": "quote_request",
+    "risk": "moderate"
+  },
+  {
+    "id": "EM-45",
+    "from": "customer45@example.com",
+    "subject": "Estimate for booking system",
+    "body": "Please share an estimate for building the booking system we discussed \u2014 ballpark is fine.",
+    "expectedCategory": "quote_request",
+    "risk": "moderate"
+  },
+  {
+    "id": "EM-46",
+    "from": "customer46@example.com",
+    "subject": "Following up on refund ticket",
+    "body": "Following up on my refund request from last week \u2014 any update?",
+    "expectedCategory": "follow_up",
+    "risk": "low"
+  },
+  {
+    "id": "EM-47",
+    "from": "customer47@example.com",
+    "subject": "Did you receive my email?",
+    "body": "Did you receive my previous email about the logo issue? Still waiting to hear back.",
+    "expectedCategory": "follow_up",
+    "risk": "low"
+  },
+  {
+    "id": "EM-48",
+    "from": "customer48@example.com",
+    "subject": "Any update on search fix?",
+    "body": "Any update on the search problem I reported on Tuesday? Our members keep asking.",
+    "expectedCategory": "follow_up",
+    "risk": "low"
+  },
+  {
+    "id": "EM-49",
+    "from": "customer49@example.com",
+    "subject": "Still waiting for quote",
+    "body": "Still waiting for the quote for the homepage redesign. Can you chase it please?",
+    "expectedCategory": "follow_up",
+    "risk": "low"
+  },
+  {
+    "id": "EM-50",
+    "from": "customer50@example.com",
+    "subject": "Follow up: import help",
+    "body": "Just a follow up \u2014 we're ready to do the member import whenever your team can guide us.",
+    "expectedCategory": "follow_up",
+    "risk": "low"
+  }
+]

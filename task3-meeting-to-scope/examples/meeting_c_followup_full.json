@@ -1,0 +1,273 @@
+{
+  "project": "Meridian Sports \u2014 Follow-up (Meeting C)",
+  "prompt_version": "scope-pipeline-v1",
+  "status": "draft_pending_approval",
+  "requirements": [
+    {
+      "id": "REQ-001",
+      "description": "First, we want one more filter \u2014 by price range",
+      "source_quote": "Sarah: A few things. First, we want one more filter \u2014 by price range. Customers keep asking for it. That's new, on top of category and location.",
+      "speaker": "Sarah",
+      "status": "confirmed",
+      "priority": "should-have",
+      "topic": "search",
+      "feasibility": "existing_configuration",
+      "feasibility_note": "Search filters (category/location/level) and radius search are settings under Search Settings.",
+      "evidence": [],
+      "acceptance_criteria": "Client can verify: first, we want one more filter \u2014 by price range (confirm exact test at approval)."
+    },
+    {
+      "id": "REQ-002",
+      "description": "Customers keep asking for it",
+      "source_quote": "Sarah: A few things. First, we want one more filter \u2014 by price range. Customers keep asking for it. That's new, on top of category and location.",
+      "speaker": "Sarah",
+      "status": "confirmed",
+      "priority": "should-have",
+      "topic": "general",
+      "feasibility": "needs_clarification",
+      "feasibility_note": "No matching documented capability found. Absence of evidence is not evidence of absence \u2014 expert to confirm.",
+      "evidence": [],
+      "acceptance_criteria": "Client can verify: customers keep asking for it (confirm exact test at approval)."
+    },
+    {
+      "id": "REQ-003",
+      "description": "Third, on mobile we changed our mind: the search bar should sit below the header image, not above it",
+      "source_quote": "Sarah: Third, on mobile we changed our mind: the search bar should sit below the header image, not above it. Our designer mocked it up and below looks better.",
+      "speaker": "Sarah",
+      "status": "confirmed",
+      "priority": "should-have",
+      "topic": "search",
+      "feasibility": "existing_with_limitation",
+      "feasibility_note": "Themes responsive; mobile search-bar position is a Design Setting. Custom mobile layouts need dev.",
+      "evidence": [],
+      "acceptance_criteria": "Client can verify: third, on mobile we changed our mind: the search bar should sit below the header image, not above it (confirm exact test at approval)."
+    },
+    {
+      "id": "REQ-004",
+      "description": "We want to launch at the end of January instead",
+      "source_quote": "James: Also the timeline moved. Christmas is unrealistic for our team. We want to launch at the end of January instead.",
+      "speaker": "James",
+      "status": "confirmed",
+      "priority": "should-have",
+      "topic": "general",
+      "feasibility": "needs_clarification",
+      "feasibility_note": "Timeline statement \u2014 not a product feature; confirm as project constraint.",
+      "evidence": [],
+      "acceptance_criteria": "Client can verify: we want to launch at the end of january instead (confirm exact test at approval)."
+    },
+    {
+      "id": "REQ-005",
+      "description": "And a new idea: could members take bookings directly on their listing page?",
+      "source_quote": "Sarah: And a new idea: could members take bookings directly on their listing page? Like a booking calendar. I know that wasn't in the original scope \u2014 tell us what it would cost separately.",
+      "speaker": "Sarah",
+      "status": "confirmed",
+      "priority": "should-have",
+      "topic": "booking",
+      "feasibility": "potential_custom_development",
+      "feasibility_note": "No booking calendar in documented features.",
+      "evidence": [],
+      "acceptance_criteria": "Client can verify: and a new idea: could members take bookings directly on their listing page? (confirm exact test at approval)."
+    }
+  ],
+  "exclusions": [
+    "Second, drop the AI search idea for now. We talked it over \u2014 no longer needed in phase one. Good standard filters first, AI later if ever."
+  ],
+  "estimates": [
+    {
+      "requirement_id": "REQ-001",
+      "task": "REQ-001 \u00b7 Requirements & design",
+      "low_h": 1.0,
+      "likely_h": 2.0,
+      "high_h": 3.0,
+      "assumption": "Heuristic v1 for 'existing_configuration'. Needs senior review."
+    },
+    {
+      "requirement_id": "REQ-001",
+      "task": "REQ-001 \u00b7 Configuration",
+      "low_h": 1.0,
+      "likely_h": 2.0,
+      "high_h": 4.0,
+      "assumption": "Heuristic v1 for 'existing_configuration'. Needs senior review."
+    },
+    {
+      "requirement_id": "REQ-001",
+      "task": "REQ-001 \u00b7 Testing & handover",
+      "low_h": 1.0,
+      "likely_h": 2.0,
+      "high_h": 3.0,
+      "assumption": "Heuristic v1 for 'existing_configuration'. Needs senior review."
+    },
+    {
+      "requirement_id": "REQ-002",
+      "task": "REQ-002 \u00b7 Discovery / feasibility spike",
+      "low_h": 2.0,
+      "likely_h": 4.0,
+      "high_h": 8.0,
+      "assumption": "Heuristic v1 for 'needs_clarification'. Needs senior review."
+    },
+    {
+      "requirement_id": "REQ-003",
+      "task": "REQ-003 \u00b7 Requirements & design",
+      "low_h": 1.0,
+      "likely_h": 2.0,
+      "high_h": 4.0,
+      "assumption": "Heuristic v1 for 'existing_with_limitation'. Needs senior review."
+    },
+    {
+      "requirement_id": "REQ-003",
+      "task": "REQ-003 \u00b7 Configuration + workarounds",
+      "low_h": 2.0,
+      "likely_h": 4.0,
+      "high_h": 7.0,
+      "assumption": "Heuristic v1 for 'existing_with_limitation'. Needs senior review."
+    },
+    {
+      "requirement_id": "REQ-003",
+      "task": "REQ-003 \u00b7 Testing & handover",
+      "low_h": 1.0,
+      "likely_h": 3.0,
+      "high_h": 5.0,
+      "assumption": "Heuristic v1 for 'existing_with_limitation'. Needs senior review."
+    },
+    {
+      "requirement_id": "REQ-004",
+      "task": "REQ-004 \u00b7 Discovery / feasibility spike",
+      "low_h": 2.0,
+      "likely_h": 4.0,
+      "high_h": 8.0,
+      "assumption": "Heuristic v1 for 'needs_clarification'. Needs senior review."
+    },
+    {
+      "requirement_id": "REQ-005",
+      "task": "REQ-005 \u00b7 Requirements & technical design",
+      "low_h": 2.0,
+      "likely_h": 4.0,
+      "high_h": 7.0,
+      "assumption": "Heuristic v1 for 'potential_custom_development'. Needs senior review."
+    },
+    {
+      "requirement_id": "REQ-005",
+      "task": "REQ-005 \u00b7 Backend implementation",
+      "low_h": 6.0,
+      "likely_h": 12.0,
+      "high_h": 22.0,
+      "assumption": "Heuristic v1 for 'potential_custom_development'. Needs senior review."
+    },
+    {
+      "requirement_id": "REQ-005",
+      "task": "REQ-005 \u00b7 Frontend implementation",
+      "low_h": 4.0,
+      "likely_h": 8.0,
+      "high_h": 14.0,
+      "assumption": "Heuristic v1 for 'potential_custom_development'. Needs senior review."
+    },
+    {
+      "requirement_id": "REQ-005",
+      "task": "REQ-005 \u00b7 Testing, integration & deployment",
+      "low_h": 3.0,
+      "likely_h": 6.0,
+      "high_h": 10.0,
+      "assumption": "Heuristic v1 for 'potential_custom_development'. Needs senior review."
+    }
+  ],
+  "totals": {
+    "low_h": 26.0,
+    "likely_h": 53.0,
+    "high_h": 95.0
+  },
+  "scope_md": "# Scope of Work \u2014 Meridian Sports \u2014 Follow-up (Meeting C)\n\n_Status: DRAFT \u2014 requires human approval before sending. Pipeline: scope-pipeline-v1_\n\n## Requirements (with feasibility checked against product knowledge)\n\n### REQ-001 \u2014 First, we want one more filter \u2014 by price range\n- Status: **confirmed** \u00b7 Priority: should-have \u00b7 Feasibility: **existing_configuration**\n- Feasibility note: Search filters (category/location/level) and radius search are settings under Search Settings.\n- Evidence: no KB citation (offline check)\n- Acceptance: Client can verify: first, we want one more filter \u2014 by price range (confirm exact test at approval).\n- Client said (Sarah): \u201cSarah: A few things. First, we want one more filter \u2014 by price range. Customers keep asking for it. That's new, on top of category and location.\u201d\n\n### REQ-002 \u2014 Customers keep asking for it\n- Status: **confirmed** \u00b7 Priority: should-have \u00b7 Feasibility: **needs_clarification**\n- Feasibility note: No matching documented capability found. Absence of evidence is not evidence of absence \u2014 expert to confirm.\n- Evidence: no KB citation (offline check)\n- Acceptance: Client can verify: customers keep asking for it (confirm exact test at approval).\n- Client said (Sarah): \u201cSarah: A few things. First, we want one more filter \u2014 by price range. Customers keep asking for it. That's new, on top of category and location.\u201d\n\n### REQ-003 \u2014 Third, on mobile we changed our mind: the search bar should sit below the header image, not above it\n- Status: **confirmed** \u00b7 Priority: should-have \u00b7 Feasibility: **existing_with_limitation**\n- Feasibility note: Themes responsive; mobile search-bar position is a Design Setting. Custom mobile layouts need dev.\n- Evidence: no KB citation (offline check)\n- Acceptance: Client can verify: third, on mobile we changed our mind: the search bar should sit below the header image, not above it (confirm exact test at approval).\n- Client said (Sarah): \u201cSarah: Third, on mobile we changed our mind: the search bar should sit below the header image, not above it. Our designer mocked it up and below looks better.\u201d\n\n### REQ-004 \u2014 We want to launch at the end of January instead\n- Status: **confirmed** \u00b7 Priority: should-have \u00b7 Feasibility: **needs_clarification**\n- Feasibility note: Timeline statement \u2014 not a product feature; confirm as project constraint.\n- Evidence: no KB citation (offline check)\n- Acceptance: Client can verify: we want to launch at the end of january instead (confirm exact test at approval).\n- Client said (James): \u201cJames: Also the timeline moved. Christmas is unrealistic for our team. We want to launch at the end of January instead.\u201d\n\n### REQ-005 \u2014 And a new idea: could members take bookings directly on their listing page?\n- Status: **confirmed** \u00b7 Priority: should-have \u00b7 Feasibility: **potential_custom_development**\n- Feasibility note: No booking calendar in documented features.\n- Evidence: no KB citation (offline check)\n- Acceptance: Client can verify: and a new idea: could members take bookings directly on their listing page? (confirm exact test at approval).\n- Client said (Sarah): \u201cSarah: And a new idea: could members take bookings directly on their listing page? Like a booking calendar. I know that wasn't in the original scope \u2014 tell us what it would cost separately.\u201d\n\n## Explicit exclusions (from client's own words)\n\n- Second, drop the AI search idea for now. We talked it over \u2014 no longer needed in phase one. Good standard filters first, AI later if ever.\n\n## Open questions (do not estimate as firm work until answered)\n\n- REQ-002: Customers keep asking for it \u2014 No matching documented capability found. Absence of evidence is not evidence of absence \u2014 expert to confirm.\n- REQ-004: We want to launch at the end of January instead \u2014 Timeline statement \u2014 not a product feature; confirm as project constraint.\n\n## Effort summary\n\n- Low: **26 h** \u00b7 Likely: **53 h** \u00b7 High: **95 h**\n- Ranges, not a fixed quote. `needs_clarification` items carry only a discovery spike.\n\n## Client responsibilities\n- Approve/revise this scope; confirm acceptance tests; provide test data and timely feedback.\n",
+  "proposal_md": "# Proposal \u2014 Meridian Sports \u2014 Follow-up (Meeting C)\n\n_Status: DRAFT \u2014 not sent. Human approval required._\n\n## Executive summary\nWe reviewed your requirements against the product's documented capabilities first. 2 item(s) can be delivered mainly through existing settings (faster, cheaper); 1 item(s) need custom development and are priced separately below.\n\n## Deliverables\n\n- **REQ-001** First, we want one more filter \u2014 by price range (existing configuration)\n- **REQ-002** Customers keep asking for it (needs clarification)\n- **REQ-003** Third, on mobile we changed our mind: the search bar should sit below the header image, not above it (existing with limitation)\n- **REQ-004** We want to launch at the end of January instead (needs clarification)\n- **REQ-005** And a new idea: could members take bookings directly on their listing page? (potential custom development)\n\n## Effort & pricing assumptions\n\n- Estimated effort: 26\u201395 hours (likely 53 h).\n- Hourly rate not set: hours only. A human confirms the commercial price before this is sent.\n- Items marked 'needs clarification' are quoted only as a short discovery spike until confirmed.\n\n## What is NOT included\n- Anything in the scope's exclusions, and any requirement added after approval (quoted as a change).\n\n## Next step\n- Reply approving this scope (or request changes). No work begins before approval.\n",
+  "diff": {
+    "added": [
+      {
+        "description": "First, we want one more filter \u2014 by price range",
+        "topic": "search",
+        "signal": "client explicitly signalled an addition",
+        "action": "needs estimate + acceptance criteria; quote separately if out of scope"
+      },
+      {
+        "description": "And a new idea: could members take bookings directly on their listing page?",
+        "topic": "booking",
+        "signal": "client explicitly signalled an addition",
+        "action": "needs estimate + acceptance criteria; quote separately if out of scope"
+      }
+    ],
+    "modified": [
+      {
+        "baseline_id": "REQ-008",
+        "description": "Customers keep asking for it",
+        "was": "We were hoping to launch before Christmas",
+        "match": 0.49,
+        "action": "re-estimate affected tasks"
+      },
+      {
+        "baseline_id": "REQ-006",
+        "description": "Third, on mobile we changed our mind: the search bar should sit below the header image, not above it",
+        "was": "We want a better mobile experience \u2014 search should be obvious on phones",
+        "match": 0.47,
+        "action": "re-estimate affected tasks"
+      },
+      {
+        "baseline_id": "REQ-001",
+        "description": "We want to launch at the end of January instead",
+        "was": "We want customers to find products and local coaches faster",
+        "match": 0.51,
+        "action": "re-estimate affected tasks"
+      }
+    ],
+    "removed": [
+      {
+        "baseline_id": "REQ-004",
+        "description": "Maybe add AI search as well?",
+        "matched_removed_terms": [
+          "ai",
+          "search"
+        ],
+        "action": "remove from scope; deduct estimate"
+      }
+    ],
+    "not_mentioned_confirm": [
+      {
+        "baseline_id": "REQ-002",
+        "description": "We need filters \u2014 by category, by location, maybe by membership level",
+        "action": "not mentioned in follow-up \u2014 assume still in scope, confirm with client"
+      },
+      {
+        "baseline_id": "REQ-003",
+        "description": "We also want visitors to search within, say, 10 miles of their postcode",
+        "action": "not mentioned in follow-up \u2014 assume still in scope, confirm with client"
+      },
+      {
+        "baseline_id": "REQ-005",
+        "description": "And it should handle typos \u2014 people spell coach names wrong all the time",
+        "action": "not mentioned in follow-up \u2014 assume still in scope, confirm with client"
+      },
+      {
+        "baseline_id": "REQ-007",
+        "description": "Search and mobile are the must-haves for phase one",
+        "action": "not mentioned in follow-up \u2014 assume still in scope, confirm with client"
+      },
+      {
+        "baseline_id": "REQ-009",
+        "description": "One more thing \u2014 premium members pay us more, so ideally they appear higher in results",
+        "action": "not mentioned in follow-up \u2014 assume still in scope, confirm with client"
+      }
+    ],
+    "unchanged": [],
+    "potentially_out_of_scope": [
+      {
+        "description": "First, we want one more filter \u2014 by price range",
+        "topic": "search",
+        "signal": "client explicitly signalled an addition",
+        "action": "needs estimate + acceptance criteria; quote separately if out of scope"
+      },
+      {
+        "description": "And a new idea: could members take bookings directly on their listing page?",
+        "topic": "booking",
+        "signal": "client explicitly signalled an addition",
+        "action": "needs estimate + acceptance criteria; quote separately if out of scope"
+      }
+    ],
+    "summary": "2 added, 3 modified, 1 removed, 0 unchanged, 5 to confirm."
+  }
+}

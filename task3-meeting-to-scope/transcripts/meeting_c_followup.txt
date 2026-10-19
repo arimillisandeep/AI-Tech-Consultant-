@@ -1,0 +1,12 @@
+Meeting C — Northgate Sports — FOLLOW-UP to Meeting A (same project, changes requested)
+Date: 2026-10-12  Attendees: Sarah (client, owner), James (client, ops), Consultant
+
+Consultant: Last time we scoped search filters, radius search, mobile search, and a question mark over AI ranking. What's changed?
+Sarah: A few things. First, we want one more filter — by price range. Customers keep asking for it. That's new, on top of category and location.
+James: Second, drop the AI search idea for now. We talked it over — no longer needed in phase one. Good standard filters first, AI later if ever.
+Sarah: Third, on mobile we changed our mind: the search bar should sit below the header image, not above it. Our designer mocked it up and below looks better.
+James: Also the timeline moved. Christmas is unrealistic for our team. We want to launch at the end of January instead.
+Sarah: And a new idea: could members take bookings directly on their listing page? Like a booking calendar. I know that wasn't in the original scope — tell us what it would cost separately.
+Consultant: Booking is definitely outside the original scope, so we'll flag it as an extra quote, not silently add it.
+James: Exactly. Separate line item. Everything else from the first meeting still stands — filters, radius, premium members higher if that's possible.
+Sarah: And same rule: approve the revised scope before anything is built.

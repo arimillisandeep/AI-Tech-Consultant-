@@ -1,0 +1,133 @@
+{
+  "project": "BloomBox \u2014 E-commerce (Meeting B)",
+  "prompt_version": "scope-pipeline-v1",
+  "status": "draft_pending_approval",
+  "requirements": [
+    {
+      "id": "REQ-001",
+      "description": "We need checkout to be reliable",
+      "source_quote": "Elena: Customers abandon because card payments fail sometimes. We need checkout to be reliable. We use Stripe, some florists ask about PayPal too.",
+      "speaker": "Elena",
+      "status": "confirmed",
+      "priority": "must-have",
+      "topic": "payments",
+      "feasibility": "needs_clarification",
+      "feasibility_note": "No matching documented capability found. Absence of evidence is not evidence of absence \u2014 expert to confirm.",
+      "evidence": [],
+      "acceptance_criteria": "Client can verify: we need checkout to be reliable (confirm exact test at approval)."
+    },
+    {
+      "id": "REQ-002",
+      "description": "We also want order notification emails that actually arrive \u2014 confirmations, and a reminder before a subscription renews",
+      "source_quote": "Elena: We also want order notification emails that actually arrive \u2014 confirmations, and a reminder before a subscription renews. Right now half of them land in spam.",
+      "speaker": "Elena",
+      "status": "confirmed",
+      "priority": "should-have",
+      "topic": "notifications",
+      "feasibility": "existing_with_limitation",
+      "feasibility_note": "Templates editable/on-off; deliverability needs SPF+DKIM on sending domain.",
+      "evidence": [],
+      "acceptance_criteria": "Client can verify: we also want order notification emails that actually arrive \u2014 confirmations, and a reminder before a subscription renews (confirm exact test at approval)."
+    },
+    {
+      "id": "REQ-003",
+      "description": "Also, when a member cancels, we need refunds handled correctly \u2014 our team is unsure about the exact rules, like how old a payment can be for a refund",
+      "source_quote": "Elena: Please do. Also, when a member cancels, we need refunds handled correctly \u2014 our team is unsure about the exact rules, like how old a payment can be for a refund.",
+      "speaker": "Elena",
+      "status": "confirmed",
+      "priority": "must-have",
+      "topic": "payments",
+      "feasibility": "existing_configuration",
+      "feasibility_note": "Refunds via Finance > Transactions; dashboard limit 180 days.",
+      "evidence": [],
+      "acceptance_criteria": "Client can verify: also, when a member cancels, we need refunds handled correctly \u2014 our team is unsure about the exact rules, like how old a payment can be for a refund (confirm exact test at approval)."
+    },
+    {
+      "id": "REQ-004",
+      "description": "But I need a clear estimate split by item so I can choose what to approve",
+      "source_quote": "Elena: Timeline is flexible, quality matters more. But I need a clear estimate split by item so I can choose what to approve.",
+      "speaker": "Elena",
+      "status": "confirmed",
+      "priority": "must-have",
+      "topic": "general",
+      "feasibility": "needs_clarification",
+      "feasibility_note": "No matching documented capability found. Absence of evidence is not evidence of absence \u2014 expert to confirm.",
+      "evidence": [],
+      "acceptance_criteria": "Client can verify: but i need a clear estimate split by item so i can choose what to approve (confirm exact test at approval)."
+    }
+  ],
+  "exclusions": [],
+  "estimates": [
+    {
+      "requirement_id": "REQ-001",
+      "task": "REQ-001 \u00b7 Discovery / feasibility spike",
+      "low_h": 2.0,
+      "likely_h": 4.0,
+      "high_h": 8.0,
+      "assumption": "Heuristic v1 for 'needs_clarification'. Needs senior review."
+    },
+    {
+      "requirement_id": "REQ-002",
+      "task": "REQ-002 \u00b7 Requirements & design",
+      "low_h": 1.0,
+      "likely_h": 2.0,
+      "high_h": 4.0,
+      "assumption": "Heuristic v1 for 'existing_with_limitation'. Needs senior review."
+    },
+    {
+      "requirement_id": "REQ-002",
+      "task": "REQ-002 \u00b7 Configuration + workarounds",
+      "low_h": 2.0,
+      "likely_h": 4.0,
+      "high_h": 7.0,
+      "assumption": "Heuristic v1 for 'existing_with_limitation'. Needs senior review."
+    },
+    {
+      "requirement_id": "REQ-002",
+      "task": "REQ-002 \u00b7 Testing & handover",
+      "low_h": 1.0,
+      "likely_h": 3.0,
+      "high_h": 5.0,
+      "assumption": "Heuristic v1 for 'existing_with_limitation'. Needs senior review."
+    },
+    {
+      "requirement_id": "REQ-003",
+      "task": "REQ-003 \u00b7 Requirements & design",
+      "low_h": 1.0,
+      "likely_h": 2.0,
+      "high_h": 3.0,
+      "assumption": "Heuristic v1 for 'existing_configuration'. Needs senior review."
+    },
+    {
+      "requirement_id": "REQ-003",
+      "task": "REQ-003 \u00b7 Configuration",
+      "low_h": 1.0,
+      "likely_h": 2.0,
+      "high_h": 4.0,
+      "assumption": "Heuristic v1 for 'existing_configuration'. Needs senior review."
+    },
+    {
+      "requirement_id": "REQ-003",
+      "task": "REQ-003 \u00b7 Testing & handover",
+      "low_h": 1.0,
+      "likely_h": 2.0,
+      "high_h": 3.0,
+      "assumption": "Heuristic v1 for 'existing_configuration'. Needs senior review."
+    },
+    {
+      "requirement_id": "REQ-004",
+      "task": "REQ-004 \u00b7 Discovery / feasibility spike",
+      "low_h": 2.0,
+      "likely_h": 4.0,
+      "high_h": 8.0,
+      "assumption": "Heuristic v1 for 'needs_clarification'. Needs senior review."
+    }
+  ],
+  "totals": {
+    "low_h": 11.0,
+    "likely_h": 23.0,
+    "high_h": 42.0
+  },
+  "scope_md": "# Scope of Work \u2014 BloomBox \u2014 E-commerce (Meeting B)\n\n_Status: DRAFT \u2014 requires human approval before sending. Pipeline: scope-pipeline-v1_\n\n## Requirements (with feasibility checked against product knowledge)\n\n### REQ-001 \u2014 We need checkout to be reliable\n- Status: **confirmed** \u00b7 Priority: must-have \u00b7 Feasibility: **needs_clarification**\n- Feasibility note: No matching documented capability found. Absence of evidence is not evidence of absence \u2014 expert to confirm.\n- Evidence: no KB citation (offline check)\n- Acceptance: Client can verify: we need checkout to be reliable (confirm exact test at approval).\n- Client said (Elena): \u201cElena: Customers abandon because card payments fail sometimes. We need checkout to be reliable. We use Stripe, some florists ask about PayPal too.\u201d\n\n### REQ-002 \u2014 We also want order notification emails that actually arrive \u2014 confirmations, and a reminder before a subscription renews\n- Status: **confirmed** \u00b7 Priority: should-have \u00b7 Feasibility: **existing_with_limitation**\n- Feasibility note: Templates editable/on-off; deliverability needs SPF+DKIM on sending domain.\n- Evidence: no KB citation (offline check)\n- Acceptance: Client can verify: we also want order notification emails that actually arrive \u2014 confirmations, and a reminder before a subscription renews (confirm exact test at approval).\n- Client said (Elena): \u201cElena: We also want order notification emails that actually arrive \u2014 confirmations, and a reminder before a subscription renews. Right now half of them land in spam.\u201d\n\n### REQ-003 \u2014 Also, when a member cancels, we need refunds handled correctly \u2014 our team is unsure about the exact rules, like how old a payment can be for a refund\n- Status: **confirmed** \u00b7 Priority: must-have \u00b7 Feasibility: **existing_configuration**\n- Feasibility note: Refunds via Finance > Transactions; dashboard limit 180 days.\n- Evidence: no KB citation (offline check)\n- Acceptance: Client can verify: also, when a member cancels, we need refunds handled correctly \u2014 our team is unsure about the exact rules, like how old a payment can be for a refund (confirm exact test at approval).\n- Client said (Elena): \u201cElena: Please do. Also, when a member cancels, we need refunds handled correctly \u2014 our team is unsure about the exact rules, like how old a payment can be for a refund.\u201d\n\n### REQ-004 \u2014 But I need a clear estimate split by item so I can choose what to approve\n- Status: **confirmed** \u00b7 Priority: must-have \u00b7 Feasibility: **needs_clarification**\n- Feasibility note: No matching documented capability found. Absence of evidence is not evidence of absence \u2014 expert to confirm.\n- Evidence: no KB citation (offline check)\n- Acceptance: Client can verify: but i need a clear estimate split by item so i can choose what to approve (confirm exact test at approval).\n- Client said (Elena): \u201cElena: Timeline is flexible, quality matters more. But I need a clear estimate split by item so I can choose what to approve.\u201d\n\n## Explicit exclusions (from client's own words)\n\n- None recorded \u2014 confirm at approval.\n\n## Open questions (do not estimate as firm work until answered)\n\n- REQ-001: We need checkout to be reliable \u2014 No matching documented capability found. Absence of evidence is not evidence of absence \u2014 expert to confirm.\n- REQ-004: But I need a clear estimate split by item so I can choose what to approve \u2014 No matching documented capability found. Absence of evidence is not evidence of absence \u2014 expert to confirm.\n\n## Effort summary\n\n- Low: **11 h** \u00b7 Likely: **23 h** \u00b7 High: **42 h**\n- Ranges, not a fixed quote. `needs_clarification` items carry only a discovery spike.\n\n## Client responsibilities\n- Approve/revise this scope; confirm acceptance tests; provide test data and timely feedback.\n",
+  "proposal_md": "# Proposal \u2014 BloomBox \u2014 E-commerce (Meeting B)\n\n_Status: DRAFT \u2014 not sent. Human approval required._\n\n## Executive summary\nWe reviewed your requirements against the product's documented capabilities first. 2 item(s) can be delivered mainly through existing settings (faster, cheaper); 0 item(s) need custom development and are priced separately below.\n\n## Deliverables\n\n- **REQ-001** We need checkout to be reliable (needs clarification)\n- **REQ-002** We also want order notification emails that actually arrive \u2014 confirmations, and a reminder before a subscription renews (existing with limitation)\n- **REQ-003** Also, when a member cancels, we need refunds handled correctly \u2014 our team is unsure about the exact rules, like how old a payment can be for a refund (existing configuration)\n- **REQ-004** But I need a clear estimate split by item so I can choose what to approve (needs clarification)\n\n## Effort & pricing assumptions\n\n- Estimated effort: 11\u201342 hours (likely 23 h).\n- Hourly rate not set: hours only. A human confirms the commercial price before this is sent.\n- Items marked 'needs clarification' are quoted only as a short discovery spike until confirmed.\n\n## What is NOT included\n- Anything in the scope's exclusions, and any requirement added after approval (quoted as a change).\n\n## Next step\n- Reply approving this scope (or request changes). No work begins before approval.\n"
+}

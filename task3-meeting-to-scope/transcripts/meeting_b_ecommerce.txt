@@ -1,0 +1,14 @@
+Meeting B — BloomBox (online florist directory) — E-commerce workflow
+Date: 2026-10-07  Attendees: Elena (client, founder), Consultant
+
+Elena: We sell memberships to local florists and take orders through the site. Checkout needs work.
+Consultant: What's happening at checkout today?
+Elena: Customers abandon because card payments fail sometimes. We need checkout to be reliable. We use Stripe, some florists ask about PayPal too.
+Elena: We also want order notification emails that actually arrive — confirmations, and a reminder before a subscription renews. Right now half of them land in spam.
+Consultant: Order confirmations and renewal reminders — noted.
+Elena: One florist asked if we can support a local payment gateway common in their country. It's not Stripe or PayPal. Is that possible?
+Consultant: Possibly, but third-party gateways usually mean a custom integration. We'll verify what the platform supports out of the box first.
+Elena: Please do. Also, when a member cancels, we need refunds handled correctly — our team is unsure about the exact rules, like how old a payment can be for a refund.
+Elena: Timeline is flexible, quality matters more. But I need a clear estimate split by item so I can choose what to approve.
+Consultant: We'll itemise: configuration fixes versus custom integration, each with its own estimate and dependencies.
+Elena: Perfect. And nothing goes live without me approving the proposal first.

@@ -1,0 +1,17 @@
+{
+  "name": "task2-inbox-agent",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Inbox Agent \u2014 TypeScript strict, Node builtins only at runtime. Consumes Task 1 over HTTP.",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
+    "eval": "node dist/eval.js",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run build && node --test dist/autonomy.test.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "@types/node": "^20.14.0"
+  }
+}

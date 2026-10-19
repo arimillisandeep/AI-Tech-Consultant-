@@ -1,0 +1,21 @@
+Meeting A — Northgate Sports (retail directory) — Website improvements
+Date: 2026-10-05  Attendees: Sarah (client, owner), James (client, ops), Consultant
+
+Consultant: Thanks both. What prompted this call?
+Sarah: Our website search isn't great. We want customers to find products and local coaches faster.
+James: Right now people type a sport and get hundreds of results in random order. We need filters — by category, by location, maybe by membership level.
+Sarah: We also want visitors to search within, say, 10 miles of their postcode. That's how our customers actually think.
+Consultant: Noted. Anything else on search?
+Sarah: Maybe add AI search as well? Like, it understands what people mean, not just exact words. And it should handle typos — people spell coach names wrong all the time.
+James: On mobile it's worse. The search box is buried. We want a better mobile experience — search should be obvious on phones.
+Sarah: Also our listing pages look dated. But search first. Search and mobile are the must-haves for phase one.
+Consultant: Budget and timeline?
+James: We were hoping to launch before Christmas. Budget — we'd like to keep phase one under about 80 hours of work if possible, but tell us what's realistic.
+Sarah: One more thing — premium members pay us more, so ideally they appear higher in results. Not sure if that's a setting.
+Consultant: Good questions. Some of this may already exist as settings in your platform. We'll check the product documentation before quoting any custom work.
+James: That would be great. Whatever is already built in, use that first.
+Sarah: Agreed. We do not want to pay for custom code if a setting does the job.
+Consultant: Anything explicitly out for phase one?
+Sarah: No redesign of the whole site. And no mobile app right now — website only.
+James: And member payments are fine as they are. Don't touch billing.
+Consultant: Understood. We'll draft a scope with what's configurable versus custom, with hour ranges, and send it for your approval before any work starts.

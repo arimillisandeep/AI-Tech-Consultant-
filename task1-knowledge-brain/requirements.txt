@@ -1,0 +1,8 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+httpx>=0.27
+beautifulsoup4>=4.12
+pydantic>=2.6
+scikit-learn>=1.4
+anthropic>=0.39  # optional at runtime: app falls back to extractive mode without a key
+pytest>=8.0
